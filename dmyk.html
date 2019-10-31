@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UDFD.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: "courier new", courier, sans-serif;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+      }
+      .video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .collapsible {
+        cursor: pointer;
+        padding: 1px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      a:hover {
+        background-color: blue;
+        color: orange;
+      }
+      a:visited {
+        color: blue;
+      }
+      a:hover,
+      :visited {
+        background-color: blue;
+        color: orange;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: blue;
+        color: orange;
+      }
+
+      .content {
+        display: none;
+        overflow: hidden;
+      }
+
+      button {
+        color: blue;
+        text-decoration: underline;
+        margin-bottom: 2px;
+      }
+      .title {
+        font-weight: bold;
+      }
+      .small-dot-line {
+        float: left;
+        font-size: 10pt;
+        font-family: courier new;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-right: 0;
+        padding-left: 0;
+        border-top-width: 2px;
+        border-top-style: dotted;
+        border-top-color: #000000;
+      }
+      .dot-line {
+        float: left;
+        width: 100%;
+        height: 0px;
+        font-family: courier new;
+        padding-top: 3px;
+        padding-bottom: 1px;
+        padding-right: 0;
+        padding-left: 0;
+        border-top-width: 2px;
+        border-top-style: dotted;
+        border-top-color: #000000;
+      }
+      .intro {
+        font-size: large;
+      }
+
+      .intro-body {
+        font-size: small;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <img src="dmyk-supreme.png" alt="dmyk" height="23" />
+    </div>
+    <br />
+    <div class="small-dot-line">
+      05/20/1967
+    </div>
+    <div class="dot-line"></div>
+    <div class="intro">dmyk. Video-guide for visitors</div>
+    <br />
+    <div class="intro-body">
+      Hello,
+      <br /><br />
+      This is a video-guide for dmyk hotel.<br />
+      You can watch the video to inform yourself how to use dmyk. <br />
+      We are always here to help you.<br />
+      <br />
+      Please contact us anytime on Instagram.<br />
+      <a href="https://www.instagram.com/dmyk_hotel/" target="_blank"
+        >@dmyk_hotel</a
+      >.
+    </div>
+    <br />
+    <br />
+    <div class="title">
+      INSTRUCTIONS.
+    </div>
+    <br />
+    <button class="collapsible">- To dmyk. From subway.</button>
+    <div class="content">
+      <div class="container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/0FQN5I-wqFY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+    <button class="collapsible">- To dmyk. From bus.</button>
+    <div class="content">
+      <div class="container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Z8m2O5d6osM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+    <button class="collapsible">- Doorlock. Kor.</button>
+    <div class="content">
+      <div class="container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bWEWUZuS-yc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+    <button class="collapsible">- Doorlock. Engl.</button>
+    <div class="content">
+      <div class="container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_nRCCZAUKQc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+
+    <button class="collapsible">- Penthouse. Kor.</button>
+    <div class="content">
+      <div class="container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/6wrZ0YmPyXQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="video"
+        ></iframe>
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

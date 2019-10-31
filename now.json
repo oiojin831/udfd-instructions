@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "udfd-instructions",
+  "alias": "udfd-instructions.now.sh",
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/dmyk", "dest": "/dmyk.html" },
+    { "src": "/sinsa", "dest": "/sinsa.html" },
+    { "src": "/sinsa-fc", "dest": "/sinsa-fc.html" },
+    { "src": "/sinsa-bd", "dest": "/sinsa-bd.html" },
+    { "src": "/sinsa-rj", "dest": "/sinsa-rj.html" },
+    { "src": "/sinsa-bw", "dest": "/sinsa-bw.html" },
+    { "src": "/jhonor", "dest": "/jhonor.html" }
+  ]
+}
